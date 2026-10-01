@@ -1,0 +1,20 @@
+Campus Create - Test Checklist - Yassa Hassan
+
+1. Empty required fields - Expected: Blocked - Result: PASS
+2. Email: amina (invalid) - Expected: Blocked - Result: PASS
+3. Telephone: 123 (invalid) - Expected: Blocked - Result: PASS
+4. Portfolio blank - Expected: Accepted - Result: PASS
+5. Portfolio https://example.com - Expected: Accepted - Result: PASS
+6. Portfolio not-a-url - Expected: Blocked - Result: PASS
+7. Date Yesterday - Expected: Blocked - Result: PASS
+8. Date Today - Expected: Accepted - Result: PASS
+9. Seats 0 - Expected: Blocked - Result: PASS
+10. Seats 5 - Expected: Blocked - Result: PASS
+11. Seats 1.5 - Expected: Blocked - Result: PASS
+12. Seats 1 - Expected: Individual booking - Result: PASS
+13. Seats 4 - Expected: Group booking - Result: PASS
+14. Short password - Expected: Blocked - Result: PASS
+15. Mismatched password - Expected: Blocked - Result: PASS
+16. Agreement unchecked - Expected: Blocked - Result: PASS
+17. All fields valid - Expected: Green preview, no password shown - Result: PASS
+18. 390px view + Tab - Expected: No scroll, visible focus - Result: PASS

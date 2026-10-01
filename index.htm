@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campus Create - Yassa Hassan</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="card">
+<h1>Workshop Registration</h1>
+<form id="regForm" novalidate>
+<div class="form-grid">
+  <div><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="yassa@ucu.ac.ug"></div>
+  <div><label for="portfolio">Portfolio</label><input id="portfolio" name="portfolio" type="url" placeholder="https://example.com"></div>
+  <div><label for="sessionDate">Preferred Date</label><input id="sessionDate" name="sessionDate" type="date" required></div>
+  <div><label for="seats">Seats</label><input id="seats" name="seats" type="number" required min="1" max="4" step="1" value="1"></div>
+  <div><label for="fullName">Full Name</label><input id="fullName" name="fullName" type="text" required minlength="2" value="Yassa Hassan"></div>
+  <div><label for="telephone">Telephone</label><input id="telephone" name="telephone" type="tel" pattern="\+?[0-9]{9,15}" value="+256771234567"></div>
+  <div><label for="course">Workshop</label><select id="course" name="course" required><option value="">-- Choose --</option></select></div>
+  <div><label for="password">Password</label><input id="password" name="password" type="password" required minlength="10" value="Practice12345"></div>
+  <div><label for="confirmPassword">Confirm</label><input id="confirmPassword" name="confirmPassword" type="password" required value="Practice12345"></div>
+  <div class="full"><label><input id="agree" type="checkbox" required checked> I agree</label></div>
+</div>
+<button type="submit">Preview registration</button>
+<p id="feedback" hidden></p>
+</form>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

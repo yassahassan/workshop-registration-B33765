@@ -1,0 +1,11 @@
+Q1: Why does the form need both HTML constraints and JavaScript?
+A1: HTML constraints give fast browser-native checks for type, required, min/max. JavaScript adds custom rules that HTML cannot do like password match, trimming spaces, setting today's date as min, and clearing custom errors.
+
+Q2: How do the array and loop work together?
+A2: const workshops = ["HTML Essentials", "CSS Studio", "JavaScript Lab"] stores the names. The for...of loop visits each string once, creates a new <option> element, sets its value and textContent, and appends it to the select #course. Creating the option INSIDE the loop is needed to get 3 different options.
+
+Q3: Why use valueAsNumber rather than value when comparing seats?
+A3: seats.value returns a string "2". "2" === 1 is false. seats.valueAsNumber returns a real number 2, so comparison if(seatCount===1) works correctly. It also gives NaN if empty.
+
+Q4: Why must a custom validity message be cleared after a correction?
+A4: Once setCustomValidity("message") is set, the field stays invalid forever even after the user fixes it. You must call setCustomValidity("") to clear the error and allow the form to become valid again.
